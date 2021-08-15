@@ -1,0 +1,112 @@
+.news
+  padding: 55px 0px 110px
+  background-color: #f9f9f9
+  &__top
+    display: flex
+    justify-content: space-between
+    margin-bottom: 60px
+  &__title-box
+    max-width: 520px
+    padding-left: 140px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      width: 100px
+      height: 2px
+      background-color: #ffc222
+      left: 0
+      top: 11px
+  &__title
+    font-size: 24px
+    font-weight: 500
+    line-height: 24px
+    color: #212020
+    font-family: 'Roboto', sans-serif
+    margin-bottom: 10px
+  &__text
+    letter-spacing: 0.1px
+  &__btn
+    a
+      color: #373636
+      line-height: 24px
+      letter-spacing: 0.25px
+      padding: 5px 38px
+      border: 3px solid #e6e6e6
+  &__inner
+    display: flex
+    justify-content: space-between
+  &__slider
+    max-width: 555px
+    width: 100%
+    background-color: #fff
+    box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13)
+    padding: 60px 35px 45px 75px
+    position: relative
+    &::before
+      content: "\f10e"
+      font-family: "icomoon"
+      color: #fff
+      font-size: 16px
+      width: 65px
+      height: 30px
+      text-align: center
+      line-height: 30px
+      background-color: #ffc222
+      position: absolute
+      top: 0
+      left: 70px
+    &-title
+      font-size: 18px
+      line-height: 24px
+      color: #242424
+      font-weight: 500
+      font-family: 'Roboto', sans-serif
+      letter-spacing: 0.5px
+      margin-bottom: 15px
+    &-text
+      margin-bottom: 30px
+    &-author
+      letter-spacing: 0.1px
+      color: #212020
+      font-family: 'Roboto', sans-serif
+      font-weight: 500
+    &-inner
+      .slick-btn
+        top: auto
+        bottom: -110px
+      .slick-next
+        right: -35px
+      .slick-prev
+        left: auto
+        right: 20px
+      .slick-disabled
+        border-color: #dadada
+        &::before
+          color: #dadada
+  &__blog
+    max-width: 260px
+    width: 100%
+    &-title
+      font-size: 16px
+      font-weight: 500
+      font-family: 'Roboto', sans-serif
+      letter-spacing: 0.5px
+      color: #242424
+      padding: 12px 0
+    &-text
+      letter-spacing: 0.1px
+      color: #5e5e5e
+  &__images
+    position: relative
+  &__date
+    position: absolute
+    background-color: #ffc222
+    height: 55px
+    width: 50px
+    color: #fff
+    text-align: center
+    padding-top: 30px
+    font-weight: 700
+    top: 0
+    left: 10px

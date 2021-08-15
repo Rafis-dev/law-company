@@ -1,0 +1,115 @@
+.form
+  padding-top: 30px
+  &__title-box
+    max-width: 520px
+    padding-left: 140px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      width: 100px
+      height: 2px
+      background-color: #ffc222
+      left: 0
+      top: 11px
+  &__title
+    font-size: 24px
+    font-weight: 500
+    line-height: 24px
+    color: #212020
+    font-family: 'Roboto', sans-serif
+    margin-bottom: 10px
+  &__text
+    letter-spacing: 0.1px
+  &__inner
+    padding-bottom: 40px
+    background-image: url(../img/form-fon.png)
+    min-height: 460px
+    background-repeat: no-repeat
+    background-position: bottom right
+  &__box
+    max-width: 850px
+    padding-top: 45px
+    &-inner
+      display: flex
+      justify-content: space-between
+    &-inner label, input, textarea
+      display: block
+      width: 100%
+    &-inner label
+      line-height: 36px
+      color: #282828
+      font-family: 'Roboto', sans-serif
+    &-inner input
+      margin-bottom: 8px
+      outline: none
+      height: 40px
+      border: 1px solid #e6e6e6
+      padding: 0px 10px
+    &-inner select
+      outline: none
+      padding-left: 17px
+    &-inner textarea
+      outline: none
+      border: 1px solid #e6e6e6
+      padding: 10px
+      height: 208px
+      resize: none
+      margin-bottom: 40px
+    &-inner button
+      background-color: transparent
+      color: #282828
+      bottom: 0
+      right: 0
+      float: right
+    &-left
+      max-width: 260px
+      width: 100%
+    &-right
+      max-width: 555px
+      width: 100%
+    &-inner
+      .jq-selectbox.jqselect
+        display: block
+        width: 100%
+      .jq-selectbox
+        &__select
+          height: 40px
+          border: 1px solid #e6e6e6
+          padding-left: 17px
+        &__trigger-arrow:before
+          content: "\f105"
+          font-family: "icomoon"
+          position: absolute
+          top: 0
+          right: 17px
+          transform: rotate(90deg)
+        &__dropdown
+          width: 100%
+          margin: 2px 0 0
+          padding: 0
+          border: 1px solid #e6e6e6
+          background: #FFF
+          box-shadow: 0 2px 10px rgba(0,0,0,.2)
+        li
+          min-height: 18px
+          padding: 5px 17px 6px
+          color: #231F20
+          &.selected
+            background-color: #A3ABB1
+            color: #FFF
+          &:hover
+            background-color: #08C
+            color: #FFF
+          &.disabled
+            color: #AAA
+          &.disabled:hover
+            background: none
+          &.optgroup
+            font-weight: bold
+          &.optgroup:hover
+            background: none
+            color: #231F20
+            cursor: default
+          &.option
+            padding-left: 25px

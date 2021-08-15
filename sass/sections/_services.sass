@@ -1,0 +1,69 @@
+.services
+  padding: 50px 0px 30px
+  &__top
+    display: flex
+    justify-content: space-between
+    margin-bottom: 60px
+  &__title-box
+    max-width: 520px
+    padding-left: 140px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      width: 100px
+      height: 2px
+      background-color: #ffc222
+      left: 0
+      top: 11px
+  &__title
+    font-size: 24px
+    font-weight: 500
+    line-height: 24px
+    color: #212020
+    font-family: 'Roboto', sans-serif
+    margin-bottom: 10px
+  &__text
+    letter-spacing: 0.1px
+  &__btn
+    a
+      color: #373636
+      line-height: 24px
+      letter-spacing: 0.25px
+      padding: 5px 38px
+      border: 3px solid #e6e6e6
+  &__items
+    display: flex
+    justify-content: space-between
+  &__item
+    max-width: 360px
+    text-align: center
+    padding: 30px 0px 80px
+    position: relative
+    min-height: 375px
+    background-color: #f9f9f9
+    box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14)
+    &-title
+      color: #212020
+      font-size: 18px
+      line-height: 24px
+      font-weight: 500
+      font-family: 'Roboto', sans-serif
+      padding: 24px 0
+    &-text
+      letter-spacing: 0.1px
+      padding: 0px 30px 30px
+    &-btn
+      position: absolute
+      bottom: 40px
+      left: 0
+      right: 0
+      .default-btn
+        color: #373636
+        &::after
+          color: #fff
+    &-link
+      color: #050505
+      font-family: 'Roboto', sans-serif
+      border-bottom: 1px solid #000
+      margin-right: 60px
